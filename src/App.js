@@ -1,18 +1,11 @@
 import React from 'react';
 import './style.css';
-import Header from './components/Header.jsx';
-import HomePage from './pages/HomePage.jsx';
-import FeedItem from './components/FeedItem';
-import FeedList from './components/FeedList';
 
-function App() {
-    return (
-        <div>
-            <Header />
-            <HomePage />
-            
-        </div>
-    );
-}
 
-export default App;
+// Exercise 2: Set It Up
+	// 1.Write a class component
+	//  2.Include it a div with a class name of App
+	// 3.import Header and Homepage
+	// 4.include them inside of App class component
+	// 5.export the App component below the function!
+
