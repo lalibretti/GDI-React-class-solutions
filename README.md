@@ -8,6 +8,8 @@ App.js, HomePage.jsx, and the files in the components folder
 
  ** The pages that are to be updated will have page specific instructions ** 
 
+ ***if you get really stuck you can look at the solutions repo ***
+
 
 
 # Getting Started with Create React App
