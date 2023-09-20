@@ -1,22 +1,8 @@
 import React from 'react';
 
-function Header() {
-    return (
-        <ul className="Header">
-            <li className="Logo">
-                Catstagram
-            </li>
-            <li>
-                Home
-            </li>
-            <li>
-                About
-            </li>
-            <li>
-                Profile
-            </li>
-        </ul>
-    );
-};
-
-export default Header;
+// Exercise 2: Set It Up
+    // write a class component
+    // make it a ul with a class name of Header
+    // make four li: Catstagram, Home, About, Profile
+    // put class name of Logo on the li element with GDInsta
+    // export default the component!

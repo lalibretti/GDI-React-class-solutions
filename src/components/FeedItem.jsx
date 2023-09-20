@@ -1,13 +1,7 @@
 import React from 'react';
-import Likes from './Likes.jsx';
-
-function FeedItem() {
-    return (
-        <div className="FeedItem">
-            <img className="Image" />
-            <Likes />
-        </div>
-    );
-}
-
-export default FeedItem;
+// Exercise 2: Set It Up
+	// write a class component
+	// make it a div with className FeedItem
+	// make an img element inside
+	// import Likes, include it underneath img
+	// export default the component!

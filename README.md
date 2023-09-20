@@ -1,3 +1,15 @@
+#Class 2 Homework 
+-update the following files: 
+App.js, HomePage.jsx, and the files in the components folder
+ 1. write a class component with a dic and appropriate class name
+ 2. import the necessary files
+ 3. add them to the div
+ 4. export the default component 
+
+ ** The pages that are to be updated will have page specific instructions ** 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
