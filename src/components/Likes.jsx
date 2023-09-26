@@ -1,9 +1,10 @@
 import React from 'react';
 
-function Likes() {
+function Likes(props) {
+	const {totalLikes} = props;
 	return (
 		<div className="Likes">
-			<span>X likes</span>
+			<span>{totalLikes}</span>
 			<button className="LikesButton">
 				Like
 			</button>

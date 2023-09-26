@@ -7,7 +7,7 @@ function HomePage(){
     return (
     <div className="HomePage">
         <ImageUploaderForm />
-        <FeedList />
+        <FeedList photos={photos} />
     </div>
     );
 }
