@@ -1,7 +1,9 @@
 import React from "react";
+import data from '../data.json';
 import ImageUploaderForm from '../components/ImageUploaderForm.jsx';
 import FeedList from "../components/FeedList.jsx";
 
+const { photos } = data;
 
 function HomePage(){
     return (
@@ -13,3 +15,5 @@ function HomePage(){
 }
 
 export default HomePage;
+
+

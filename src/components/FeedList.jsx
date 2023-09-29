@@ -2,7 +2,7 @@ import React from 'react';
 import FeedItem from './FeedItem.jsx';
 
 function FeedList(props) {
-    const {props} = props;
+    const {photos} = props;
     return (
         <div className="FeedList">
             {
@@ -10,7 +10,6 @@ function FeedList(props) {
                 <FeedItem photo ={photo} key={i} />
                 )
             }
-            <FeedItem />
         </div>
     );
 };

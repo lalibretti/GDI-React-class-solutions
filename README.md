@@ -1,3 +1,31 @@
+# Class 3 Homework update our project to include properties in our components
+1. Data has been included in Homepage.jsx.  Take a look at data.json - we need to extract the photos array from it.  How could we do that?  (hint: destructuring!)
+
+
+2. How can we get those photos from <Homepage/> component to <FeedList/> component?  (hint: props!)
+
+
+3. For each photo that gets passed down to <FeedList/>, we need to create a <FeedItem/>
+for each individual photo.  (hint: use the map function!)
+
+
+4. The img inside of <FeedItem/> needs to display the src url that gets passed to it.
+
+
+5. <Likes/> component needs to display the number of likes passed down to it.
+
+
+
+# Class 2 Homework -update the following files: App.js, HomePage.jsx, and the files in the components folder
+
+1. write a class component with a dic and appropriate class name
+2. import the necessary files
+3. add them to the div
+4. export the default component
+** The pages that are to be updated will have page specific instructions **
+
+***if you get really stuck you can look at the solutions repo ***
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
