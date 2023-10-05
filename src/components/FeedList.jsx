@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import FeedItem from './FeedItem.jsx';
+import {PhotosContext} from '../App.js';
 
-function FeedList(props) {
-    const {photos} = props;
+function FeedList() {
+    const {photos} = useContext(PhotosContext)
     return (
         <div className="FeedList">
             {

@@ -3,13 +3,13 @@ import data from '../data.json';
 import ImageUploaderForm from '../components/ImageUploaderForm.jsx';
 import FeedList from "../components/FeedList.jsx";
 
-const { photos } = data;
+//const { photos } = data;
 
 function HomePage(){
     return (
     <div className="HomePage">
         <ImageUploaderForm />
-        <FeedList photos={photos} />
+        <FeedList />
     </div>
     );
 }

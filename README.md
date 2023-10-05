@@ -1,3 +1,71 @@
+# Class 5: Get Information
+ ## Exercise 5 Rewrite this component to accept user input
+ The goal: When the user inputs a url, the component should log it to the console
+    // You might want to read a little bit more about forms here: https://reactjs.org/docs/forms.html
+    // but essentially, there are two parts to this:
+     1) the input reflecting it's current value when the input changes
+     2) and submitting the form.
+    * For 1), you will need to create an handleChange function and pass it as a prop to the <input> element.
+    // handleChange will set the state with the value of the target of the event passed to it.
+    * For 2) you will need to create a handleSubmit function and pass it as an onClick prop to the button.
+     handleSubmit will be the one submitting - ie console.log the current url in the state for now. and on handleSubmit, you will want to reset the state.
+
+## Exercise 6 Provide Context 
+1. Refactor your app to use React Context to get the photos data from <App /> to <FeedList />.  Refer to the React Context Docs if you need help.
+2. Create a new PhotosContext outside of <App /> in the app file and wrap the contents of <App /> component with the PhotosContext provider, passing in the value of photos
+Use the new context in <FeedList /> instead of props.
+Eliminate passing props through <HomePage />
+ 
+ ### Exercise 6 Bonus 
+  Let’s get your  <ImageUploaderForm /> to actually add the photo to the Homepage! Tutorial that you can refer to for help
+If photos data in <App/> is changing, you will need to set the photos data as state in <App/>.
+1. You will need a way to update the photos data with the new url - create a function in <App/> called addPhoto that updates the photos state by accepting a url, and creating a new photo object to add to the photos array in the state. 
+With regards to adding the new photo to the array, BE CAREFUL ABOUT IMMUTABILITY HERE.  You can look at these resources for some ideas
+Blog 1 (search for the example with prevState)
+StackoverFlow 1
+2. Pass the addPhoto function to the PhotosContext provider in <App />
+Extract the addPhoto function out of the PhotosContext provider in <ImageUploaderForm /> and use it as the call back to handleSubmit.
+*** Extra Bonus: can you add it to the front of the array instead of the end, but in an immutable way?
+
+### Optional:Exercise 7 API It --Optional 
+1. Refactor your <App /> to use useEffect hook to make a call to the api to fetch the photos data.  
+2. Import useEffect from React and add it as a function to your <App />
+3. Use fetch to get data from the api: https://api.jsonbin.io/b/5f95dcdbbd69750f00c37370
+4. On successful fetch, convert the response object to a JSON object
+5. Set the data to state
+** Don't forget to pass in an empty array as a second argument to useEffect so that it only runs once per component mount
+Remove any references to data.photos from the imported json
+
+### Exercise 8 Router 
+1. Need to run in the top most level folder of your repo: 
+yarn or npm install --save react-router-dom
+** Utilize the React Router documentation to help you with this exercise.
+2. You will need to edit  App.jsx and Header.jsx where your links are located.
+3. The files for <AboutPage /> and <ProfilePage />  already exist.
+4. Add functional components, export them, and voila - you should have
+separate pages with working links!
+
+### Optional Exercise 9 Make it yours! 
+1. In your Profile Page: Create at least 2 new components
+Use your imagination! Biography? List of favorite cats? Profile picture?
+For CSS help with structuring a page, recommended to use FlexBox.
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://flexboxfroggy.com/ (cute little game to teach you flexbox)
+
+
+
+# Class 4 State
+1. Create a button that toggles between two states: "Liked" and "Not liked (yet)"
+	 // add a constructor with initial state
+	 // add a button to the rendered JSX with an onClick attribute
+	 // add a method to handle the click/ change the state
+	 // hook up the button text to the state
+2. BONUS: Create a likes counter
+	 // take in a prop for the number of likes
+	 // increase or decrease the likes based on whether button click is like/ unlike
+	 // hint: take the total likes as a prop, and convert it to state
+
+
 # Class 3 Homework update our project to include properties in our components
 1. Data has been included in Homepage.jsx.  Take a look at data.json - we need to extract the photos array from it.  How could we do that?  (hint: destructuring!)
 
