@@ -1,16 +1,15 @@
-import React, {createContext, useState} from 'react';
+import React, {createContext, useState, useEffect} from 'react';
 import { Routes, Route } from "react-router-dom"; 
 import Header from './components/Header.jsx';
 import HomePage from './pages/HomePage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import ProfilePage from './pages/ProfilePage.jsx';
-import data from './data.json'
 
 
 export const PhotosContext = createContext()
 
 function App() {
-    const [photos, setPhotos] = useState(data.photos)
+    const [photos, setPhotos] = useState([])
     const addPhoto = (url) => {
         setPhotos((prevState) => {
             const newPhoto = {
@@ -25,7 +24,13 @@ function App() {
         })
     }
 
-    
+    useEffect(() => {
+        fetch('https://api.jsonbin.io/b/5f95dcdbbd69750f00c37370')
+            .then(response => response.json())
+            .then((data) => {
+                setPhotos(data.photos)
+            })
+    }, [])
 
     return (
         <PhotosContext.Provider value={{photos, addPhoto}} >
